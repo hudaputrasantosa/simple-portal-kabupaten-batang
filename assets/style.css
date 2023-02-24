@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ *{
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+   }
+   
+   body{
+     background-color: white;
+     font-family: 'Poppins',sans-serif;
+   }
+   
+   header{
+     margin: 0 auto;
+     display: inline;
+   }
+   
+   header > nav {
+     position: sticky;
+     top: 0;
+     padding: 10px 50px;
+     padding-top: 24px;
+     padding-bottom: 24px;
+     display: flex;
+     width: 100%;
+     align-items: center;
+     z-index: 1;
+     background-color: #e6e93d;
+   }
+   
+   nav > a > img {
+    padding-left: 10px;
+     width: 30%;
+   }
+   
+   nav > .navigation{
+     flex-grow: 3;
+     display: inline-block;
+     text-align: right;
+   }
+   
+   .navigation .nav-item{
+     list-style: none;
+     display: inline;
+     margin-right: 30px;
+   }
+   
+   .navigation .nav-item a{
+     color: #1c1c1c;
+     font-size: 16px;
+     font-weight: bold;
+     text-decoration: none;
+     padding-bottom: 5px;
+   }
+   .navigation .nav-item a:hover{
+     color: #feffa8;
+   }
+   
+   .navigation-responsive{
+     text-decoration: none;
+     padding: 10px;
+     border-radius: 5px;
+     display: none;
+     font-size: 35px;
+     color: #212529;
+   }
+   
+   #tentang{
+     display: flex;
+     padding: 60px;
+     align-items: center;
+   }
+   
+   #tentang-text,#tentang-logo{
+     flex-grow: 1;
+   }
+   
+   #tentang-logo{
+     padding-left: 20px;   
+   }
+
+   #tentang-logo > img{
+     width: 100%;
+   }
+   
+   #tentang-text > h1{
+     font-size: 55px;
+   }
+   
+   #tentang-text > p{
+     padding-right: 50px;
+     font-size: 18px;
+     font-weight: lighter;
+     color: #1c1c1c;
+     line-height: 1.9;
+     margin: 20px 0 40px;
+   }
+   
+   .text-primary{
+     color: #d2d43a;
+   }
+   
+   .btn{
+     text-decoration: none;
+     padding: 10px 15px;
+     border-radius: 5px;
+   }
+   
+   .btn-primary{
+     background-color: #dee13c;
+     color: #1c1c1c;
+     font-weight: bold;
+   }
+
+   .btn-berita{
+     text-decoration: none;
+     padding: 5px 8px 5px 8px;
+     border-radius: 5px;
+     background-color: #dee13c;
+     color: #1c1c1c;
+     font-size: small;
+     font-weight: bold;
+   }
+   
+   #berita{
+     padding:20px 70px 50px;
+     text-align: center;
+   }
+   
+   #berita > h2{
+     margin-top: 30px;
+   }
+   
+   #berita > p{
+     font-size: 22px;
+     color: #535353;
+     margin-bottom: 20px;
+   }
+
+   .berita-container{
+    padding-top: 30px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     margin-bottom: 40px;
+     position: relative;
+   }
+   
+   .berita-item{
+     box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
+     margin: 15px;
+     border-radius: 5px;
+     flex: 30%;
+   }
+   
+   .berita-item > img{
+     width: 300;
+     object-fit: cover;
+     height: 200px;
+   }
+   
+   .berita-description{
+     padding: 10px 20px;
+     margin-bottom: 10px;
+     text-align: left;
+   }
+   
+   .berita-description > p{
+     padding: 5px 0px 12px 0px;
+     color: #606060;
+     font-size: 14px;
+   }
+   
+   .berita-description > a > p{
+     text-align: center;
+     font-size: 15px;
+     padding-bottom: 10px;
+   } 
+
+   .berita-caption{
+     color:#212529;
+   }
+   
+   .berita-caption > p{
+     text-align: justify;
+     font-size: 14px;
+     padding-bottom: 10px;
+   }
+   
+   #kontak{
+     display: flex;
+     padding: 30px 70px ;
+   }
+   
+   .kontak-form,.biodata{
+     flex: 3;
+     padding: 10px 20px 0px;
+   }
+   
+   .biodata{
+     flex: 1;
+   }
+   
+   .kontak-form > .card > h3{
+     text-align: center;
+     padding-top: 30px;
+     font-size: 30px;
+   }
+   
+   .card{
+     border-radius: 5px;
+     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.2);
+   }
+   
+   .form-group{
+     margin: 30px 40px;
+   }
+   
+   input,textarea{
+     width: 100%;
+     padding:10px;
+     border-style: none;
+     border: 1px solid #8f8f8f;
+     border-radius: 5px;
+   }
+   
+   label{
+     display: block;
+     margin-bottom:10px;
+   }
+   
+   input.btn-primary{
+     border-style: none;
+     cursor: pointer;
+     font-weight: bold;
+     margin-bottom: 30px;
+     border: 2px solid #dee13c;
+   }
+   
+   .form-group > p{
+     color: #8f8f8f; 
+     font-size: 14px;
+   }
+   
+   .profile{
+     object-fit: cover;
+     height: 140px;
+     width: 140px;
+     margin-top: 40px;
+     margin-bottom: 15px;
+     border-radius: 50%;
+     box-shadow: 0 2px 2px 2px rgba(0,0,0,0.2);
+   }
+   
+   .biodata{
+     text-align: center;
+   }
+   
+   .biodata > .card{
+     padding: 10px 25px;
+     position: relative;
+   }
+   
+   .biodata > .card >h4{
+    padding-bottom: 15px;
+   }
+   
+   .text-muted{
+     color: #8f8f8f;
+     font-size: 12px;
+     margin-top: 8px;
+     margin-bottom: 30px;
+   }
+   
+   .table-responsive{
+     display: block;
+     margin-bottom: 30px;
+   }
+   
+   .biodata > table{
+     border-spacing: 0px;
+     width: auto;
+     border: 2px solid #f7f7f7;
+     margin-bottom: 55px;
+   }
+   
+   tr,th,td{
+     text-align: left;
+     padding: 10px;
+   }
+   
+   tr:nth-child(even){
+     background-color: #ffffff;
+   }
+   
+   tr:nth-child(odd){
+     background-color: #f7f7f7;
+   }
+   
+   #footer{
+     padding: 40px 80px 0px;
+     background-color: #dee13c;
+   }
+   
+   .footer-content{
+     display: flex;
+   }
+   
+   .footer-tentang,.footer-kontak{
+     flex: 1;
+   }
+   
+   .footer-tentang h4{
+     font-weight: bold;
+     font-size: 24px;
+     margin-bottom: 10px;
+   }
+   
+   .footer-tentang p{
+     color: #1e1e1e;
+     text-align: justify;
+     right: 10px;
+     line-height: 1.6;
+     margin-right: 50px;
+   }
+   
+ .footer-kontak h4{
+     font-weight: bold;
+     font-size: 24px;
+     margin-bottom: 10px;
+   }
+
+    .footer-kontak p{
+     color: #1e1e1e;
+     text-align: justify;
+     right: 10px;
+     line-height: 1.6;
+     margin-right: 50px;
+   }
+
+   .footer-copyright{
+     padding: 10px 0px 30px;
+     margin-top: 50px;
+     font-size: 14px;
+     font-weight: lighter;
+     text-align: center;
+     color: #1b1b1b;
+   }   
+   
+   @media (max-width:1100px){
+     .navigation{
+         padding: 10px 70px;
+         position: absolute;
+         top: 80px;
+         left: 0px;
+         flex-grow: 0;
+         width: 100%;
+         box-shadow: 0 4px 4px 2px rgba(0,0,0,0.2);
+         border-top: 1px solid #bebebe;
+         opacity: 0;
+     }
+   
+     .slide-down{
+         opacity: 1 !important;
+         animation: slideDown 0.5s;
+     }
+   
+     .navigation .nav-item{
+         list-style: none;
+         display: block;
+         padding: 10px;
+         text-align: left;
+     }
+     
+   
+     .active > a,.navigation .nav-item a:hover{
+         color: #e6e93d;
+         border-bottom: none;
+     }
+   
+     .navigation-responsive{
+         display: inline-block;
+     }
+   
+     #tentang{
+         padding-bottom: 10px;
+     }
+   
+     #tentang-text > h1{
+         font-size: 35px;
+     }
+   
+     #tentang-logo > img{
+         width: 300px;
+     }
+   
+     #kontak{
+         flex-direction: column;
+         padding: 25px 10px;
+     }
+   
+     .footer-content{
+         text-align: left;
+         flex-direction: column;
+     }
+   }
+   
+   @media screen and (max-width:900px){
+     .navigation{
+         padding: 5px;
+     }
+   
+     header > nav {
+         padding: 5px;   
+     }
+   
+     #tentang{
+         flex-direction: column-reverse;
+         margin-top: 60px;
+         padding: 0px 25px 25px;
+         text-align: center;
+     }
+   
+     #tentang-text > h1{
+         font-size: 35px;
+     }
+   
+     #tentang-text > p{
+         text-align: justify;
+         font-size: 16px;
+         margin-top:25px;
+         padding-right: 0px;
+     }
+   
+     #tentang-logo > img{
+         width: 200px;
+         margin-bottom: 20px;
+     }
+   
+     .biodata{
+         margin-bottom: 40px;
+     }
+   
+     .table-responsive{
+         overflow: scroll;
+     }
+   }
+   
+   @media screen and (max-width:500px){
+     .navigation{
+         padding: 10px 20px;
+         background-color: #ffffe2;
+     }
+   
+     #tentang{
+         margin-top: 15px;
+     }
+   
+     #berita{
+         padding:15px 10px;
+     }
+
+     .table-responsive{
+         width: 100%;
+     }
+
+     .footer-tentang{
+      margin:  10px 0px 20px 0px;
+      text-align: justify;
+     }
+   
+   }
+   
+   @media screen and (max-width:375px){
+     #tentang{
+         margin-top: 100px;
+     }
+   }
+   
+   @media screen and (max-width:350px){
+     #tentang{
+         margin-top: 220px;
+     }
+   }
